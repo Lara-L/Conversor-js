@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-astral-galactico_125540-407.jpg?t=st=1647215458~exp=1647216058~hmac=5ddc71e436263102dad672f40ef6f744874607fda9636b87d1e142ba83455cdd&w=826");
+    background-size: cover;
+    position: relative;
+    height: 657px;
+    filter: brightness(60%);
+}
+
+
+/* não necessariamente é necessário usar o .container, poderia utilizar a própria last-child */
+.container {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;
+    border-radius: 10%;
+    height: 656px;
+    justify-items: center;
+    background: linear-gradient(0, #120c56, #000000);
+    position: relative;
+    margin-top: -656px;
+}
+/*futuramente utilizar o sass para automatizar essa criação*/
+.stars{
+    position: relative;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+    box-shadow: 80px 180px white,
+    100px 80px white,
+    80px 120px white,
+    340px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    390px 100px white,
+    80px 180px white,
+    100px 350px white,
+    100px 260px white,
+    300px 290px white,
+    280px 215px white,
+    230px 170px white,
+    190px 300px white,
+    380px 300px white,
+    400px 200px white,
+    480px 220px white,
+    420px 380px white,
+    160px 400px white;
+    animation: anim-stars 10s linear infinite;
+}
+
+.stars::after{
+    position: absolute;
+    top: 550px;
+    content: " ";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 80px 180px white,
+    100px 80px white,
+    80px 120px white,
+    340px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    390px 100px white,
+    80px 180px white,
+    100px 350px white,
+    100px 260px white,
+    300px 290px white,
+    280px 215px white,
+    230px 170px white,
+    190px 300px white,
+    380px 300px white,
+    400px 200px white,
+    480px 220px white,
+    420px 380px white,
+    160px 400px white;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-550px);
+    }
+}
+
+
+.elementos, label {
+    color: white;
+    line-height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-family: sans-serif
+}
+
+.conversor {
+    padding-top: 2px;
+    margin-top: -370px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado {
+    margin-top: 50px;
+    color: white;
+    padding-top: 2px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: auto;    
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-left: 10px;
+}
