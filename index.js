@@ -6,4 +6,6 @@ function Converter() {
 	var elementoConvertido = document.getElementById("resultadoAnosLuz");
 	var resultadoAnosLuz = "Você viajará " + valorAnoLuz + " anos-luz";
 	elementoConvertido.innerHTML = resultadoAnosLuz;
+
 }
+
