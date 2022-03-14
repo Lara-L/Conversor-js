@@ -11,13 +11,10 @@
     filter: brightness(60%);
 }
 
-
-/* não necessariamente é necessário usar o .container, poderia utilizar a própria last-child */
 .container {
     margin-left: 30%;
     margin-right: 30%;
     width: auto;
-    border-radius: 10%;
     height: 656px;
     justify-items: center;
     background: linear-gradient(0, #120c56, #000000);
@@ -91,40 +88,34 @@
     }
 }
 
-
-.elementos, label {
+h2, label {
     color: white;
-    line-height: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
-.conversor {
-    padding-top: 2px;
-    margin-top: -370px;
+
+.form-control{
     margin-left: 30%;
     margin-right: 30%;
-    width: auto;    
-    position: relative;
-    display: flex;
-    justify-content: center;
+    width: auto;
+}  
+.btn {
+    background-color: black;
 }
+.botao {
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 60px;
 
-.resultado {
-    margin-top: 50px;
+}
+#resultadoAnosLuz{
     color: white;
-    padding-top: 2px;
-    margin-left: 30%;
-    margin-right: 30%;
-    width: auto;    
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    margin-left: 10px;
+    text-align: center; 
+    font-family: sans-serif;
 }
